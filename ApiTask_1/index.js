@@ -29,9 +29,9 @@ async function getData() {
 getData()
 
 
-// setInterval(()=>{
-// 	getData()
-// },2000)
+setInterval(()=>{
+	getData()
+},2000)
 
 
 
