@@ -16,7 +16,7 @@ async function getData() {
 		// console.log(obj.message)
 
 
-		// loader.remove()
+		loader.remove()
 		display(obj.message)
 
 	} catch (err) {
