@@ -133,7 +133,7 @@ async function deleteData(id){
 
     localStorage.setItem('products', JSON.stringify(updatedData));
 
-    displayData()
+    displayData(updatedData)
 
 }
 
