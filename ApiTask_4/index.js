@@ -69,6 +69,7 @@
 
 let container = document.querySelector('.container')
 let selectElements = document.querySelector("#names")
+let loader = document.querySelector('.loader')
 
 async function getData() {
 
@@ -83,9 +84,9 @@ async function getData() {
 
     localStorage.setItem('products',JSON.stringify(data))
     data = JSON.parse(localStorage.getItem('products')) 
+    loader.remove()
     displayData(data)
     populateFilterOptions()
-    
 }
 
 getData()
